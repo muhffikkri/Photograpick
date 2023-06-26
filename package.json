@@ -1,0 +1,24 @@
+{
+  "name": "photograpick",
+  "version": "1.0.0",
+  "description": "Website untuk mempromosikan portfiolio fotografer, jasa fotografi, dan belajar fotografi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nexvaulus/Photograpick.git"
+  },
+  "keywords": [
+    "photography",
+    "portfolio",
+    "photo"
+  ],
+  "author": "nexvaulus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nexvaulus/Photograpick/issues"
+  },
+  "homepage": "https://github.com/Nexvaulus/Photograpick#readme"
+}
