@@ -2,7 +2,7 @@ import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
 class App {
-  constructor({ drawer, content }) {
+  constructor({ content }) {
     this._content = content;
 
     this._initialAppShell();
