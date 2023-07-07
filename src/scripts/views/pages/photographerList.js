@@ -2,23 +2,16 @@
 // import { createMovieItemTemplate } from '../templates/template-creator'
 
 const PhotographerList = {
-    async render() {
-        return `
+  async render() {
+    return `
       <div class="content">
-        <h2 class="content__heading">Now Playing in Cinema</h2>
-        <div id="movies" class="movies">
-        </div>
+        <h2 class="content__heading">Photographer list</h2>
       </div>
-    `
-    },
+    `;
+  },
 
-    async afterRender() {
-        const movies = await TheMovieDbSource.nowPlayingMovies()
-        const moviesContainer = document.querySelector('#movies')
-        movies.forEach((movie) => {
-            moviesContainer.innerHTML += createMovieItemTemplate(movie)
-        })
-    },
-}
+  async afterRender() {
+  },
+};
 
-export default PhotographerList
+export default PhotographerList;

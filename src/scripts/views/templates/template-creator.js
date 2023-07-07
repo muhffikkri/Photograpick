@@ -1,4 +1,4 @@
-import CONFIG from '../../globals/config';
+// import CONFIG from '../../globals/config';
 /**
  * cardItemTemplate
  * photographerDetailTemplate
@@ -8,5 +8,5 @@ import CONFIG from '../../globals/config';
  */
 
 export {
-    
+
 };

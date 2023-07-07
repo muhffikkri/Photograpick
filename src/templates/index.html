@@ -10,12 +10,11 @@
   <link rel="icon" href="./favicon.png">
   <link rel="manifest" href="./app.webmanifest">
 
-  <title>Bootstrap demo</title>
+  <title>Photograpick</title>
 </head>
 
 <body>
-  <h1>Hello, world!</h1>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,32 +34,74 @@
       </ul>
     </div>
   </div>
-</nav>
+  </nav> -->
 
-<header></header>
-<main id="mainContent"></main>
-<footer></footer>
-
-  
-  <!-- <header class="app-bar">
-    <div class="app-bar__menu">
-      <button id="hamburgerButton">☰</button>
-    </div>
-    <div class="app-bar__brand">
-      <h1>Photograpick</h1>
-    </div>
-    <nav id="navigationDrawer" class="app-bar__navigation">
-      <ul>
-        <li><a href="#/fotografer">fotografer</a></li>
-        <li><a href="#/layanan">Layanan</a></li>
-        <li><a href="#/program">Program</a></li>
-        <li><a href="#/lainnya">Lainnya</a></li>
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <!-- <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24"> -->
+      Navbar
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <main id="mainContent"></main>
-  <footer></footer> -->
+      <div class="d-flex" role="search">
+        <a class="btn btn-outline-success" href="http://">Login</a>
+        <a class="btn btn-outline-success" href="http://">Register</a>
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </div>
+    </div>
+  </div>
+</nav>
   
+  <ul>
+    <li><a href="/#">Home</a></li>
+    <li><a href="#/fotografer">fotografer list</a></li>
+    <li><a href="#/fotografer/:fotografer">fotografer</a></li>
+    <li><a href="#/kategori">kategori fotografer</a></li>
+    <li><a href="#/kategori/:kategori">kategori</a></li>
+    <li><a href="#/layanan">layanan</a></li>
+    <li><a href="#/challenge">challenge</a></li>
+    <li><a href="#/event">event</a></li>
+    <li><a href="#/reward">reward</a></li>
+  </ul>
+  
+  <!-- <app-bar></app-bar> -->
+  <main id="mainContent"></main>
+  <!-- <foot-note></foot-note> -->
+
 </body>
 
 </html>
+
+<!-- 
+  Bikin navbar dulu sama footer
+  baru buat satu satu komponen page nya
+
+  halaman login, register
+  buat utils nav active link
+ -->

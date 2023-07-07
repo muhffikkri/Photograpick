@@ -1,16 +1,13 @@
 const Services = {
-    async render() {
-        return `
-      <div id="movie" class="movie"></div>
-    `
-    },
+  async render() {
+    return `
+      <h2>Services</h2>
 
-    async afterRender() {
-        const url = UrlParser.parseActiveUrlWithoutCombiner()
-        const movie = await TheMovieDbSource.detailMovie(url.id)
-        const movieContainer = document.querySelector('#movie')
-        movieContainer.innerHTML = createMovieDetailTemplate(movie)
-    },
-}
+    `;
+  },
 
-export default Services
+  async afterRender() {
+  },
+};
+
+export default Services;

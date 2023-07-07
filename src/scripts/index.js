@@ -1,17 +1,15 @@
 import 'regenerator-runtime';
-// import '../styles/style.css';
-// import '../styles/responsive.css';
 import App from './views/app';
-import swRegister from './utils/sw-register';
+// import swRegister from './utils/sw-register';
 
 // Import our custom CSS
-import '../scss/styles.scss'
+import '../scss/styles.scss';
 
-// Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+// import custom components
+import './views/components/app-bar';
+import './views/components/foot-note';
 
 const app = new App({
-  drawer: document.querySelector('#navigationDrawer'),
   content: document.querySelector('#mainContent'),
 });
 
@@ -21,6 +19,6 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', async () => {
   app.renderPage();
-  
-  await swRegister();
+
+  // await swRegister();
 });
