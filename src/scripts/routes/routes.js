@@ -7,6 +7,9 @@ import Services from '../views/pages/services';
 import Challenge from '../views/pages/challenge';
 import UpcomingEvent from '../views/pages/upcomingEvent';
 import Reward from '../views/pages/reward';
+import Pembelajaran from '../views/pages/pembelajaran';
+import Login from '../views/pages/login';
+import Register from '../views/pages/register';
 
 const routes = {
   '/': Home, // default page
@@ -18,6 +21,9 @@ const routes = {
   '/challenge': Challenge,
   '/event': UpcomingEvent,
   '/reward': Reward,
+  '/pembelajaran': Pembelajaran,
+  '/login': Login,
+  '/register': Register,
 };
 
 export default routes;

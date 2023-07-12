@@ -1,67 +1,12 @@
-import {cardItemTemplate} from '../templates/template-creator';
+import {createCardItemTemplate, createCarouselTemplate} from '../templates/template-creator';
 
 const PhotographerList = {
   async render() {
     return `
-      <div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-theme="light">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
       <div class="container">
         <h1 class="mb-3">Fotografer</h1>
 
-        <div class="content-section">
+        <div class="content-section carousel-ignitor">
           <div class="header-wrapper d-flex justify-content-between fs-4 fw-medium">
             <p>Scenery</p>
             <p><a href="#/kategori/:id" class="link-body-emphasis link-underline-opacity-0">Lihat Semua
@@ -217,15 +162,27 @@ const PhotographerList = {
   },
 
   async afterRender() {
+    const mainContainer = document.querySelector('#mainContent');
     const section1Container = document.querySelector('#section-1');
     const section2Container = document.querySelector('#section-2');
-    console.log(cardItemTemplate);
+
+    const carousel = document.createElement('div');
+    carousel.setAttribute('id', 'myCarousel');
+    carousel.setAttribute('data-bs-ride', 'carousel');
+    carousel.setAttribute('data-bs-theme', 'light');
+    carousel.classList.add('carousel', 'slide', 'mb-5');
+    carousel.innerHTML = createCarouselTemplate;
+
+    mainContainer.insertBefore(carousel, mainContainer.children[0]);
+
+    console.log(createCardItemTemplate);
+
     for (let i = 0; i < 9; i++) {
-      section1Container.innerHTML += cardItemTemplate;
+      section1Container.innerHTML += createCardItemTemplate;
     }
 
     for (let i = 0; i < 3; i++) {
-      section2Container.innerHTML += cardItemTemplate;
+      section2Container.innerHTML += createCardItemTemplate;
     }
   },
 };

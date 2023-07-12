@@ -30,19 +30,20 @@ class AppBar extends HTMLElement {
               Lainnya
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item fw-medium" href="#/layanan">Layanan</a></li>
               <li><a class="dropdown-item fw-medium" href="#/challenge">Challenge</a></li>
               <li><a class="dropdown-item fw-medium" href="#/event">Event</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item fw-medium" href="#/reward">Reward</a></li>
+              <li><a class="dropdown-item fw-medium disabled" href="#/layanan">Layanan</a></li>
+              <li><a class="dropdown-item fw-medium disabled" href="#/reward">Reward</a></li>
+              <li><a class="dropdown-item fw-medium disabled" href="#/pembelajaran">Pembelajaran</a></li>
             </ul>
           </li>
         </ul>
         <div class="d-flex gap-1" role="search">
-          <a class="btn btn-primary flex-fill" href="http://">Login</a>
-          <a class="btn btn-outline-primary flex-fill" href="http://">Register</a>
+          <a class="btn btn-primary flex-fill" href="#/login">Login</a>
+          <a class="btn btn-outline-primary flex-fill" href="#/register">Register</a>
           <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button> -->
         </div>
