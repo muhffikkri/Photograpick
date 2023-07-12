@@ -71,9 +71,9 @@ const Home = {
               <h2 class="feature-heading fw-normal lh-1 mt-0">Bergabung dengan jaringan fotografer</h2>
               <p class="lead mb-2">Anda juga bisa mengikuti kegiatan dan layanan kami yang lain</p>
               <div class="col mb-3 d-flex gap-2" style="max-width: 350px;">
-                <a class="btn btn-primary flex-grow-1" href="#/layanan">Layanan</a>
+                <a class="btn btn-primary flex-grow-1 disabled" href="#/layanan">Layanan</a>
                 <a class="btn btn-primary flex-grow-1" href="#/event">Event</a>
-                <a class="btn btn-primary flex-grow-1" href="#/reward">Reward</a>
+                <a class="btn btn-primary flex-grow-1 disabled" href="#/reward">Reward</a>
               </div>
 
               <h2 class="feature-heading fw-normal lh-1 mt-0">Photograpick <span class="text-body-secondary">challenge</span>
