@@ -220,7 +220,7 @@ const PhotographerList = {
     const section1Container = document.querySelector('#section-1');
     const section2Container = document.querySelector('#section-2');
     console.log(cardItemTemplate);
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 9; i++) {
       section1Container.innerHTML += cardItemTemplate;
     }
 
