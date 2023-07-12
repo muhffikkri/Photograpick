@@ -1,9 +1,13 @@
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
+// import DrawerInitiator from '../utils/drawer-initiator';
+// import FootNoteInitiator from '../utils/foot-note-initiator';
 
 class App {
-  constructor({content}) {
+  constructor({drawer, content, footer}) {
+    this._drawer = drawer;
     this._content = content;
+    this._footer = footer;
 
     this._initialAppShell();
   }
@@ -11,7 +15,10 @@ class App {
   _initialAppShell() {
     // DrawerInitiator.init({
     //   drawer: this._drawer,
-    //   content: this._content,
+    // });
+
+    // FootNoteInitiator.init({
+    //   footer: this._footer,
     // });
 
     // kita bisa menginisiasikan komponen lain bila ada
