@@ -175,8 +175,6 @@ const PhotographerList = {
 
     mainContainer.insertBefore(carousel, mainContainer.children[0]);
 
-    console.log(createCardItemTemplate);
-
     for (let i = 0; i < 9; i++) {
       section1Container.innerHTML += createCardItemTemplate;
     }

@@ -1,6 +1,5 @@
 import 'regenerator-runtime';
 import App from './views/app';
-// import swRegister from './utils/sw-register';
 
 // Import our custom CSS
 import '../scss/main.scss';
@@ -8,9 +7,6 @@ import '../scss/main.scss';
 // Import all of Bootstrap's JS
 // eslint-disable-next-line no-unused-vars
 import * as bootstrap from 'bootstrap';
-
-// Import all of Bootstrap's ICON
-
 
 // import custom components
 import './views/components/app-bar';

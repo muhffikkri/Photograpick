@@ -1,7 +1,5 @@
 import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
-// import DrawerInitiator from '../utils/drawer-initiator';
-// import FootNoteInitiator from '../utils/foot-note-initiator';
 
 class App {
   constructor({drawer, content, footer}) {
